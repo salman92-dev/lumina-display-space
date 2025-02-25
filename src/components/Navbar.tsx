@@ -38,7 +38,8 @@ const Navbar = () => {
           <div className="md:hidden">
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="text-gray-300 hover:text-white p-2"
+              className="text-gray-300 hover:text-white p-2 hover-glass rounded-md transition-colors duration-200"
+              aria-label="Toggle menu"
             >
               {isOpen ? <X size={24} /> : <Menu size={24} />}
             </button>
@@ -46,22 +47,26 @@ const Navbar = () => {
         </div>
       </div>
 
-      {isOpen && (
-        <div className="md:hidden glass">
-          <div className="px-2 pt-2 pb-3 space-y-1">
-            {menuItems.map((item) => (
-              <a
-                key={item.label}
-                href={item.href}
-                className="text-gray-300 hover:text-white block px-3 py-2 text-base font-medium hover-glass rounded-md"
-                onClick={() => setIsOpen(false)}
-              >
-                {item.label}
-              </a>
-            ))}
-          </div>
+      <div
+        className={`md:hidden transition-all duration-300 ease-in-out ${
+          isOpen
+            ? "opacity-100 translate-y-0"
+            : "opacity-0 -translate-y-full pointer-events-none"
+        }`}
+      >
+        <div className="px-2 pt-2 pb-3 space-y-1 glass">
+          {menuItems.map((item) => (
+            <a
+              key={item.label}
+              href={item.href}
+              className="text-gray-300 hover:text-white block px-3 py-2 text-base font-medium hover-glass rounded-md transition-all duration-200"
+              onClick={() => setIsOpen(false)}
+            >
+              {item.label}
+            </a>
+          ))}
         </div>
-      )}
+      </div>
     </nav>
   );
 };
