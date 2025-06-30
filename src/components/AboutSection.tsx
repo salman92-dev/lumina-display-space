@@ -4,8 +4,8 @@ const AboutSection = () => {
     <section id="about" className="py-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="glass p-8 rounded-2xl">
-          <h2 className="text-3xl font-bold text-gradient mb-8">About Me</h2>
-          <div className="grid md:grid-cols-2 gap-12">
+          <h2 className="text-3xl md:text-4xl font-bold text-gradient mb-8">About Me</h2>
+          <div className="grid md:grid-cols-2 gap-12 items-end">
             <div className="space-y-6">
               <p className="text-gray-300 leading-relaxed">
                 With over 5 years of experience in full stack development, I specialize in building scalable web applications using modern technologies. My passion lies in creating elegant solutions to complex problems.
@@ -17,15 +17,15 @@ const AboutSection = () => {
             <div className="space-y-6">
               <div className="glass p-6 rounded-xl">
                 <h3 className="text-xl font-semibold mb-4">Experience Highlights</h3>
-                <ul className="space-y-4">
-                  <li className="flex items-start">
-                    <span className="text-gray-300">• Led development of enterprise-scale applications</span>
+                <ul className="space-y-4 text-gray-300 list-disc list-outside ml-4">
+                  <li>
+                    Led development of enterprise-scale applications
                   </li>
-                  <li className="flex items-start">
-                    <span className="text-gray-300">• Implemented microservices architecture</span>
+                  <li>
+                    Implemented microservices architecture
                   </li>
-                  <li className="flex items-start">
-                    <span className="text-gray-300">• Optimized application performance</span>
+                  <li>
+                    Optimized application performance
                   </li>
                 </ul>
               </div>

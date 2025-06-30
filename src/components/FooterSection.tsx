@@ -17,11 +17,11 @@ const FooterSection = () => {
           <div className="space-y-4">
             <h3 className="text-xl font-semibold text-gradient">Quick Links</h3>
             <ul className="space-y-2">
-              <li><a href="#home" className="text-gray-400 hover-glass px-2 py-1 rounded">Home</a></li>
-              <li><a href="#about" className="text-gray-400 hover-glass px-2 py-1 rounded">About</a></li>
-              <li><a href="#skills" className="text-gray-400 hover-glass px-2 py-1 rounded">Skills</a></li>
-              <li><a href="#projects" className="text-gray-400 hover-glass px-2 py-1 rounded">Projects</a></li>
-              <li><a href="#contact" className="text-gray-400 hover-glass px-2 py-1 rounded">Contact</a></li>
+              <li><a href="/" className="text-gray-400 hover-glass px-2 py-1 rounded">Home</a></li>
+              <li><a href="/#about" className="text-gray-400 hover-glass px-2 py-1 rounded">About</a></li>
+              <li><a href="/#skills" className="text-gray-400 hover-glass px-2 py-1 rounded">Skills</a></li>
+              <li><a href="/#projects" className="text-gray-400 hover-glass px-2 py-1 rounded">Projects</a></li>
+              <li><a href="/#contact" className="text-gray-400 hover-glass px-2 py-1 rounded">Contact</a></li>
             </ul>
           </div>
           
@@ -36,7 +36,7 @@ const FooterSection = () => {
         </div>
         
         <div className="mt-8 pt-8 border-t border-white/10 text-center text-gray-400">
-          <p>© {currentYear} Your Name. All rights reserved.</p>
+          <p>© {currentYear} Salman. All rights reserved.</p>
         </div>
       </div>
     </footer>

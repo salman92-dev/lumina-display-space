@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import { Checkbox } from "@/components/ui/checkbox";
 import { Card } from "@/components/ui/card";
 import Navbar from "@/components/Navbar";
+import FooterSection from "@/components/FooterSection";
 
 interface Feature {
   id: string;
@@ -15,7 +16,7 @@ interface Feature {
 
 const features: Feature[] = [
   {
-    id: "responsive",
+    id: "responsive", 
     name: "Responsive Design",
     price: 500,
     description: "Website adapts perfectly to all screen sizes",
@@ -89,6 +90,7 @@ const QuotationPage = () => {
               <div className="flex items-start space-x-4">
                 <Checkbox
                   id={feature.id}
+                  className="w-4 h-4 mt-[0.15rem]"
                   checked={selectedFeatures.includes(feature.id)}
                   onCheckedChange={(checked) => {
                     setSelectedFeatures(
@@ -101,7 +103,7 @@ const QuotationPage = () => {
                 <div className="flex-1">
                   <label
                     htmlFor={feature.id}
-                    className="text-lg font-medium cursor-pointer"
+                    className="text-lg font-medium cursor-pointer !leading-[100%]"
                   >
                     {feature.name}
                   </label>
@@ -128,7 +130,9 @@ const QuotationPage = () => {
           </Button>
         </div>
       </div>
+      <FooterSection/>
     </div>
+    
   );
 };
 

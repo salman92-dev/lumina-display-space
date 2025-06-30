@@ -6,11 +6,11 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const menuItems = [
-    { label: "Home", href: "#home" },
-    { label: "About", href: "#about" },
-    { label: "Skills", href: "#skills" },
-    { label: "Projects", href: "#projects" },
-    { label: "Contact", href: "#contact" },
+    { label: "Home", href: "/#home" },
+    { label: "About", href: "/#about" },
+    { label: "Skills", href: "/#skills" },
+    { label: "Projects", href: "/#projects" },
+    { label: "Contact", href: "/#contact" },
     { label: "Get Quote", href: "/quote" },
   ];
 
@@ -19,7 +19,7 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <div className="flex-shrink-0">
-            <span className="text-xl font-semibold text-gradient">Portfolio</span>
+            <span className="text-xl font-semibold text-gradient">SALMAN</span>
           </div>
           
           <div className="hidden md:block">
