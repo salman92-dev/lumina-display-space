@@ -1,5 +1,5 @@
-
 import { Link } from "react-router-dom";
+import { useEffect, useRef, useState } from "react";
 
 const projects = [
    {
@@ -68,32 +68,64 @@ const projects = [
 ];
 
 const ProjectSection = () => {
+  const [isVisible, setIsVisible] = useState(false);
+  const [visibleProjects, setVisibleProjects] = useState<number[]>([]);
+  const sectionRef = useRef<HTMLElement>(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsVisible(true);
+          // Animate project cards with staggered delays
+          projects.forEach((_, index) => {
+            setTimeout(() => {
+              setVisibleProjects(prev => [...prev, index]);
+            }, index * 150);
+          });
+        }
+      },
+      { threshold: 0.2 }
+    );
+
+    if (sectionRef.current) {
+      observer.observe(sectionRef.current);
+    }
+
+    return () => observer.disconnect();
+  }, []);
+
   return (
-    <section id="projects" className="py-20">
+    <section ref={sectionRef} id="projects" className="py-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-3xl md:text-4xl font-bold text-gradient mb-12">Projects</h2>
+        <h2 className={`text-3xl md:text-4xl font-bold text-gradient mb-12 transition-all duration-700 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
+          Projects
+        </h2>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {projects.map((project) => (
+          {projects.map((project, index) => (
             <Link
               key={project.title}
               to={project.link}
-              className="glass rounded-xl overflow-hidden hover:scale-105 transition-transform duration-300 block"
+              className={`glass rounded-xl overflow-hidden hover:scale-105 hover:bg-white/10 transition-all duration-300 block group ${
+                visibleProjects.includes(index) ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
+              }`}
+              style={{ transitionDelay: `${index * 150}ms` }}
             >
               <div className="h-48 overflow-hidden">
                 <img
                   src={project.image}
                   alt={project.title}
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                 />
               </div>
               <div className="p-6">
-                <h3 className="text-xl font-semibold mb-2">{project.title}</h3>
-                <p className="text-gray-400 mb-4">{project.description}</p>
+                <h3 className="text-xl font-semibold mb-2 group-hover:text-white transition-colors duration-200">{project.title}</h3>
+                <p className="text-gray-400 mb-4 group-hover:text-gray-300 transition-colors duration-200">{project.description}</p>
                 <div className="flex flex-wrap gap-2">
                   {project.technologies.map((tech) => (
                     <span
                       key={tech}
-                      className="px-3 py-1 text-sm glass rounded-full"
+                      className="px-3 py-1 text-sm glass rounded-full group-hover:bg-white/20 transition-all duration-200"
                     >
                       {tech}
                     </span>
