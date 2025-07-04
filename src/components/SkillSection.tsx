@@ -3,8 +3,8 @@ const skills = [
   { name: "Frontend Development", level: 90 },
   { name: "Backend Development", level: 85 },
   { name: "Database Management", level: 80 },
-  { name: "Cloud Services", level: 75 },
-  { name: "DevOps", level: 70 },
+  { name: "Animations", level: 75 },
+  { name: "DevOps", level: 30 },
 ];
 
 const SkillSection = () => {

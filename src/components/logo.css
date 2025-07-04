@@ -1,0 +1,37 @@
+
+.logo-svg {
+  width: 100%;
+  max-width: 400px;
+}
+
+.logo-svg text {
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 80px;
+  fill: none;
+  stroke: #fff;
+  stroke-width: 2px;
+  stroke-dasharray: 700;
+  stroke-dashoffset: 700;
+  animation: draw 3s ease forwards;
+}
+
+.logo-svg line {
+  stroke: #fff;
+  stroke-width: 4;
+  stroke-linecap: round;
+  stroke-dasharray: 253;
+  stroke-dashoffset: 253;
+  animation: underline 2s ease forwards 1s;
+}
+
+@keyframes draw {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes underline {
+  to {
+    stroke-dashoffset: 0;
+  }
+}

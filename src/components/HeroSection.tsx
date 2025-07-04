@@ -15,10 +15,10 @@ const HeroSection = () => {
           </p>
           
           <div className="flex justify-center space-x-6 pt-8">
-            <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="glass p-3 rounded-full hover:scale-110 transition-transform">
+            <a href="https://github.com/salman92-dev" target="_blank" rel="noopener noreferrer" className="glass p-3 rounded-full hover:scale-110 transition-transform">
               <Github className="w-6 h-6" />
             </a>
-            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="glass p-3 rounded-full hover:scale-110 transition-transform">
+            <a href="https://www.linkedin.com/in/salman-ahmad-1773aa221?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener noreferrer" className="glass p-3 rounded-full hover:scale-110 transition-transform">
               <Linkedin className="w-6 h-6" />
             </a>
             <a href="#contact" className="glass p-3 rounded-full hover:scale-110 transition-transform">

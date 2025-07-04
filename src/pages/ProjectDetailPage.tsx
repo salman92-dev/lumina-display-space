@@ -5,63 +5,177 @@ import Navbar from "@/components/Navbar";
 import FooterSection from "@/components/FooterSection";
 
 const projectsData = {
-  "e-commerce-platform": {
-    title: "E-Commerce Platform",
-    description: "A full-stack e-commerce solution with real-time inventory management",
-    image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085",
-    technologies: ["React", "Node.js", "MongoDB"],
-    fullDescription: "This comprehensive e-commerce platform was built to handle high-traffic online retail operations. The system features real-time inventory management, secure payment processing, and an intuitive admin dashboard for managing products, orders, and customer data.",
+    "stockverse": {
+    title: "Stockverse",
+    description: "StockVerse.com is the gateway to the world of investing and stock market insights.  They provide up-to-date market analysis, stock news, and educational resources to help both beginners and seasoned investors make informed decisions.",
+    image: "/stockverse.svg",
+    technologies:  ["React", "Next Js", "Tailwind CSS","Express Js","SQL","Postgresql","AI"],
+    fullDescription: "StockVerse.com is the gateway to the world of investing and stock market insights. They provide up-to-date market analysis, stock news, and educational resources to help both beginners and seasoned investors make informed decisions. Whether you’re looking to track trends, discover new opportunities, or expand your financial knowledge, StockVerse.com empowers you with the tools and information you need to navigate the markets with confidence",
     features: [
-      "Real-time inventory tracking",
-      "Secure payment gateway integration",
-      "Admin dashboard with analytics",
-      "Customer account management",
-      "Order tracking system",
-      "Mobile-responsive design"
+      "Real time Stock Prices",
+      "In-Depth Company Profiles",
+      "Interactive Charts",
+      "Custom Watchlists",
+      "Market News & Alerts",
+      "AI integration to guess markets trends.",
     ],
-    challenges: "The main challenge was implementing real-time inventory updates across multiple concurrent users while maintaining data consistency.",
-    results: "Successfully reduced inventory discrepancies by 95% and improved customer satisfaction scores by 40%.",
-    liveUrl: "#",
+    challenges: "-----------------------------------------------------------",
+    results: "----------------------------------------------------------------",
+    liveUrl: "https://stockverse.com",
+    githubUrl: "https://github.com/salman92-dev/stockverse"
+  },
+  "Flying Spaghetti": {
+    title: "Flying Spaghetti",
+    description: "$FLYING is a meme coin inspired by the satirical Flying Spaghetti Monster, aiming to revive original meme culture in crypto.",
+    image: "/flying-speghetti.jpg",
+    technologies: ["HTML", "Css", "Javascript"],
+    fullDescription: "$FLYING is a meme coin with no intrinsic value or expectation of financial return. There is no formal team or roadmap. the coin is completely useless and for entertainment.",
+    features: [
+      "-------------------------------------",
+      "-------------------------------------",
+      "-------------------------------------",
+      "-------------------------------------",
+      "-------------------------------------",
+      "-------------------------------------"
+    ],
+    challenges: "-----------------------------------------------------------",
+    results: "----------------------------------------------------------------",
+    liveUrl: "https://salman92-dev.github.io/flying-spaghetti/",
     githubUrl: "#"
   },
-  "task-management-system": {
-    title: "Task Management System",
-    description: "Collaborative task management platform with real-time updates",
-    image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d",
-    technologies: ["Vue.js", "Express", "PostgreSQL"],
-    fullDescription: "A comprehensive task management system designed for teams to collaborate effectively. The platform includes real-time notifications, task assignments, progress tracking, and detailed reporting capabilities.",
+  "soap-coin": {
+    title: "Soap Coin",
+    description: "$SOAP is that feeling when you just hopped out the shower feeling squeaky clean and fresh. Your coins are pumping, your balls are clean, your bags are up. $SOAP isn’t a product, or a movement, it’s a practice. A way of life. Just make sure you don’t drop it.",
+    image: "/soap-coin.jpg",
+    technologies: ["Html", "Css", "Javascript"],
+    fullDescription: "$SOAP is that feeling when you just hopped out the shower feeling squeaky clean and fresh. Your coins are pumping, your balls are clean, your bags are up. $SOAP isn’t a product, or a movement, it’s a practice. A way of life. Just make sure you don’t drop it.",
     features: [
-      "Real-time collaboration",
-      "Task assignment and tracking",
-      "Team performance analytics",
-      "Customizable workflows",
-      "File attachment support",
-      "Integration with popular tools"
+      "-------------------------------------",
+      "-------------------------------------",
+      "-------------------------------------",
+      "-------------------------------------",
+      "-------------------------------------",
+      "-------------------------------------"
     ],
-    challenges: "Implementing real-time updates across multiple users while maintaining optimal performance was a key technical challenge.",
-    results: "Improved team productivity by 60% and reduced project completion time by 30%.",
-    liveUrl: "#",
-    githubUrl: "#"
+    challenges: "-----------------------------------------------------------",
+    results: "-----------------------------------------------------------",
+    liveUrl: "https://salman92-dev.github.io/soap-coin-eth/",
+    githubUrl: "https://github.com/salman92-dev/soap-coin-eth"
   },
-  "analytics-dashboard": {
-    title: "Analytics Dashboard",
-    description: "Real-time analytics dashboard with data visualization",
-    image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6",
-    technologies: ["React", "D3.js", "Firebase"],
-    fullDescription: "An advanced analytics dashboard that provides real-time insights into business metrics. The dashboard features interactive charts, customizable widgets, and automated reporting capabilities.",
+  "fsjal": {
+    title: "FSJAL",
+    description: "It is a meme Coin. Among the myriad of memes that have surfaced over the years, one that holds a special place in the hearts of many is the FSJAL meme.",
+    image: "/fsjal.jpg",
+    technologies: ["Html", "Css", "Javscript"],
+    fullDescription: "It is a meme Coin.Among the myriad of memes that have surfaced over the years, one that holds a special place in the hearts of many is the FSJAL meme. Join us as we take a deep dive into the history, significance, and enduring appeal of the FSJAL meme.",
     features: [
-      "Interactive data visualizations",
-      "Real-time data updates",
-      "Customizable dashboard layouts",
-      "Automated report generation",
-      "Multi-source data integration",
-      "Export capabilities"
+      "-------------------------------------",
+      "-------------------------------------",
+      "-------------------------------------",
+      "-------------------------------------",
+      "-------------------------------------",
+      "-------------------------------------"
     ],
-    challenges: "Processing and visualizing large datasets in real-time while maintaining smooth user interactions required careful optimization.",
-    results: "Reduced data analysis time by 80% and enabled faster decision-making across the organization.",
-    liveUrl: "#",
-    githubUrl: "#"
-  }
+    challenges: "-----------------------------------------------------------",
+    results: "-----------------------------------------------------------",
+    liveUrl: "https://fsjal.netlify.app/",
+    githubUrl: "https://github.com/salman92-dev/fsjal"
+  },
+  "depin": {
+    title: "Depin",
+    description: "A blockchain project using AI to enable secure, smart search/discovery for decentralized marketplaces.",
+    image: "/depin.jpg",
+    technologies: ["Html", "Css", "Javascript","React"],
+    fullDescription: "DePin is an AI-powered Web3 platform that combines blockchain security with smart marketplace search for real-world assets (RWA). By bridging AI and decentralized technologies, DePin enables users to securely discover, trade, and interact with verified assets and marketplaces on Web 3.0 — all through an intuitive, secure, and trustless environment.",
+    features: [
+      "-------------------------------------",
+      "-------------------------------------",
+      "-------------------------------------",
+      "-------------------------------------",
+      "-------------------------------------",
+      "-------------------------------------"
+    ],
+    challenges: "-----------------------------------------------------------",
+    results: "-----------------------------------------------------------",
+    liveUrl: "https://depin-coin.netlify.app/",
+    githubUrl: "https://github.com/salman92-dev/depin"
+  },
+  "solonka": {
+    title: "Solonka",
+    description: "Solonka emerges as the pinnacle of sophistication in the Solana Chain launchpad landscape, meticulously engineered for unrivaled user-friendliness and top-tier security.",
+    image: "/solonka.jpg",
+    technologies: ["Html", "Css", "Javascript"],
+    fullDescription: "Solonka emerges as the pinnacle of sophistication in the Solana Chain launchpad landscape, meticulously engineered for unrivaled user-friendliness and top-tier security.",
+    features: [
+      "-------------------------------------",
+      "-------------------------------------",
+      "-------------------------------------",
+      "-------------------------------------",
+      "-------------------------------------",
+      "-------------------------------------"
+    ],
+    challenges: "-----------------------------------------------------------",
+    results: "-----------------------------------------------------------",
+    liveUrl: "https://salman92-dev.github.io/solanka/",
+    githubUrl: "https://github.com/salman92-dev/solanka"
+  },
+  "rapid-stakes": {
+    title: "Rapid Stakes",
+    description: "The one stop decentralized sports betting & online casino platform. Play your favorite games and win big.",
+    image: "/rapid-stakes2.jpg",
+    technologies: ["Html", "Css", "Javascript"],
+    fullDescription: "The one stop decentralized sports betting & online casino platform. Play your favorite games and win big.",
+    features: [
+      "-------------------------------------",
+      "-------------------------------------",
+      "-------------------------------------",
+      "-------------------------------------",
+      "-------------------------------------",
+      "-------------------------------------"
+    ],
+    challenges: "-----------------------------------------------------------",
+    results: "-----------------------------------------------------------",
+    liveUrl: "https://salman92-dev.github.io/rapid-stake/",
+    githubUrl: "https://github.com/salman92-dev/rapid-stake"
+  },
+   "fx-coin": {
+    title: "Rapid Stakes",
+    description: "The First Frictionless Forex Investing Protocol Built on Ethereum Merging Crypto & Forex.",
+    image: "/fx-coin.jpg",
+    technologies: ["Html", "Css", "Javascript"],
+    fullDescription: "The First Frictionless Forex Investing Protocol Built on Ethereum Merging Crypto & Forex.",
+    features: [
+      "-------------------------------------",
+      "-------------------------------------",
+      "-------------------------------------",
+      "-------------------------------------",
+      "-------------------------------------",
+      "-------------------------------------"
+    ],
+    challenges: "-----------------------------------------------------------",
+    results: "-----------------------------------------------------------",
+    liveUrl: "https://salman92-dev.github.io/fx-coin/",
+    githubUrl: "https://github.com/salman92-dev/fx-coin"
+  },
+  "degen-book": {
+    title: "Degen Book",
+    description: "DegenBook empowers users to cast their vote on fellow Telegram members which is not only fun and addictive, but it’s extremely valuable also.",
+    image: "/degen-book.jpg",
+    technologies: ["Html", "Css", "Javascript"],
+    fullDescription: "DegenBook empowers users to cast their vote on fellow Telegram members which is not only fun and addictive, but it’s extremely valuable also.",
+    features: [
+      "-------------------------------------",
+      "-------------------------------------",
+      "-------------------------------------",
+      "-------------------------------------",
+      "-------------------------------------",
+      "-------------------------------------"
+    ],
+    challenges: "-----------------------------------------------------------",
+    results: "-----------------------------------------------------------",
+    liveUrl: "https://salman92-dev.github.io/degen-book/",
+    githubUrl: "https://github.com/salman92-dev/degen-book"
+  },
 };
 
 const ProjectDetailPage = () => {
@@ -99,11 +213,11 @@ const ProjectDetailPage = () => {
           </Link>
 
           <div className="glass rounded-2xl overflow-hidden">
-            <div className="h-64 md:h-80 overflow-hidden">
+            <div className="h-64 md:h-[25rem] overflow-hidden">
               <img
                 src={project.image}
                 alt={project.title}
-                className="w-full h-full object-cover"
+                className="w-[100%] h-full object-cover"
               />
             </div>
             
@@ -126,7 +240,7 @@ const ProjectDetailPage = () => {
                 
                 <div className="flex gap-4 flex-shrink-0">
                   <a
-                    href={project.liveUrl}
+                    href={project.liveUrl} target="_blank" 
                     className="glass px-4 py-2 rounded-lg hover:bg-white/10 transition-colors inline-flex items-center gap-2"
                   >
                     <ExternalLink size={16} />
