@@ -39,7 +39,7 @@ const AboutSection = () => {
               </p>
             </div>
             <div className={`space-y-6 transition-all duration-700 delay-600 ${isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-10'}`}>
-              <div className="glass p-6 rounded-xl hover:bg-white/10 transition-all duration-300">
+              <div className="glass max-md:p-4 p-6 rounded-xl hover:bg-white/10 transition-all duration-300">
                 <h3 className="text-xl font-semibold mb-4">Experience Highlights</h3>
                 <ul className="space-y-4 text-gray-300 list-disc list-outside ml-4">
                   <li className="hover:text-white transition-colors duration-200">
