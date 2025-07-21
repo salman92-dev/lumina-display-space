@@ -10,6 +10,13 @@ const projects = [
     technologies: ["React", "Next Js", "Tailwind CSS","Express Js","SQL","Postgresql","AI"],
   },
   {
+    title: "Vertex Solution",
+    description: "Vertex Solution We help businesses thrive online with cutting-edge SEO, stunning web development, and strategic digital marketing that delivers real results.",
+    image: "/vertex.jpg",
+    link : "/project/vertex",
+    technologies: ["React", "Vite", "Tailwind CSS","Supabase"],
+  },
+  {
     title: "Flying Spaghetti",
     description: "$FLYING is a meme coin inspired by the satirical Flying Spaghetti Monster, aiming to revive original meme culture in crypto.",
     image: "/flying-speghetti.jpg",

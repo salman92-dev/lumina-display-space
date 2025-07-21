@@ -24,6 +24,25 @@ const projectsData = {
     liveUrl: "https://stockverse.com",
     githubUrl: "https://github.com/salman92-dev/stockverse"
   },
+    "vertex": {
+    title: "Vertex Solutions",
+    description: "Vertex Solution We help businesses thrive online with cutting-edge SEO, stunning web development, and strategic digital marketing that delivers real results.",
+    image: "/stockverse.svg",
+    technologies:  ["React", "Vite", "Tailwind CSS","Supabase"],
+    fullDescription: "Vertex Solution We help businesses thrive online with cutting-edge SEO, stunning web development, and strategic digital marketing that delivers real results.",
+    features: [
+      "-------------------------------------",
+      "-------------------------------------",
+      "-------------------------------------",
+      "-------------------------------------",
+      "-------------------------------------",
+      "-------------------------------------",
+    ],
+    challenges: "-----------------------------------------------------------",
+    results: "----------------------------------------------------------------",
+    liveUrl: "https://vertex-solution.netlify.app/",
+    githubUrl: "https://github.com/salman92-dev/Vertex-solution.git"
+  },
   "Flying Spaghetti": {
     title: "Flying Spaghetti",
     description: "$FLYING is a meme coin inspired by the satirical Flying Spaghetti Monster, aiming to revive original meme culture in crypto.",
