@@ -27,7 +27,7 @@ const projectsData = {
     "vertex": {
     title: "Vertex Solutions",
     description: "Vertex Solution We help businesses thrive online with cutting-edge SEO, stunning web development, and strategic digital marketing that delivers real results.",
-    image: "/stockverse.svg",
+    image: "/vertex.jpg",
     technologies:  ["React", "Vite", "Tailwind CSS","Supabase"],
     fullDescription: "Vertex Solution We help businesses thrive online with cutting-edge SEO, stunning web development, and strategic digital marketing that delivers real results.",
     features: [
