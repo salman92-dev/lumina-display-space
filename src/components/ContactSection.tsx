@@ -28,7 +28,7 @@ const ContactSection = () => {
         <h2 className={`text-3xl md:text-4xl font-bold text-gradient mb-12 text-center transition-all duration-700 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
           Get in Touch
         </h2>
-        <div className={`glass p-8 rounded-2xl max-w-3xl mx-auto transition-all duration-800 delay-200 ${isVisible ? 'opacity-100 translate-y-0 scale-100' : 'opacity-0 translate-y-10 scale-95'}`}>
+        <div className={`glass max-md:p-4 py-8 p-8 rounded-2xl max-w-3xl mx-auto transition-all duration-800 delay-200 ${isVisible ? 'opacity-100 translate-y-0 scale-100' : 'opacity-0 translate-y-10 scale-95'}`}>
           <form className="space-y-6">
             <div className={`transition-all duration-500 delay-400 ${isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-5'}`}>
               <label htmlFor="name" className="block text-sm font-medium text-gray-300 mb-2">
