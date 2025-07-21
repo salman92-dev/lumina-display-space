@@ -19,9 +19,10 @@ const HeroSection = () => {
           <h1 className={`text-4xl md:text-6xl font-bold text-gradient transition-all duration-700 delay-400 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-5'}`}>
             Full Stack Developer
           </h1>
-          <p className={`text-lg md:text-xl text-gray-300 max-w-2xl mx-auto transition-all duration-700 delay-600 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-5'}`}>
+          <p className={`text-lg md:text-xl text-gray-300 max-w-2xl mx-auto mb-24 transition-all duration-700 delay-600 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-5'}`}>
             Crafting digital experiences with modern technologies and clean code.
           </p>
+          <button onClick={()=>{window.location.href="/salman_resume.pdf"}}  className="rounded-full border border-[#fff] py-3 px-12 hover:bg-[#fff] transition-all duration-300 hover:text-[#000]">See My Cv</button>
           
           <div className={`flex justify-center space-x-6 pt-8 transition-all duration-700 delay-800 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-5'}`}>
             <a href="https://github.com/salman92-dev" target="_blank" rel="noopener noreferrer" className="glass p-3 rounded-full hover:scale-110 hover:bg-white/20 transition-all duration-300 group">
