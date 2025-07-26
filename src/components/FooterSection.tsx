@@ -10,7 +10,7 @@ const FooterSection = () => {
             <h3 className="text-xl font-semibold text-gradient">Contact</h3>
             <ul className="space-y-2 text-gray-400">
               <li>Email: sa0587676@gmail.com</li>
-              <li>Location: Sahiwal Pakistan</li>
+              <li>Location: Sahiwal, Pakistan</li>
             </ul>
           </div>
           
