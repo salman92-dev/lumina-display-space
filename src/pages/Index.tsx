@@ -6,6 +6,8 @@ import SkillSection from "@/components/SkillSection";
 import ProjectSection from "@/components/ProjectSection";
 import ContactSection from "@/components/ContactSection";
 import FooterSection from "@/components/FooterSection";
+import LinkedInArticles from "@/components/Articles";
+import LinkedInEmbed from "@/components/Linkedinembed";
 
 const Index = () => {
   return (
@@ -16,6 +18,8 @@ const Index = () => {
         <AboutSection />
         <SkillSection />
         <ProjectSection />
+        <LinkedInArticles />
+        {/* <LinkedInEmbed /> */}
         <ContactSection />
       </main>
       <FooterSection />
