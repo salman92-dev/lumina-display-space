@@ -21,6 +21,7 @@ const Navbar = () => {
     { label: "About", href: "/#about" },
     { label: "Skills", href: "/#skills" },
     { label: "Projects", href: "/#projects" },
+    { label: "Articles", href: "/#articles" },
     { label: "Contact", href: "/#contact" },
     { label: "Get Quote", href: "/quote" },
   ];
@@ -44,10 +45,10 @@ const Navbar = () => {
                 <a
                   key={item.label}
                   href={item.href}
-                  className="text-gray-300 hover:text-white px-3 py-2 text-sm font-medium hover-glass rounded-md transition-all duration-200 hover:scale-105"
+                  className="text-gray-300 hover:text-white px-4 py-2 text-sm font-medium hover-glass rounded-3xl transition-all duration-200 hover:scale-105"
                   style={{ 
-                    animationDelay: `${index * 100}ms`,
-                    animation: 'fade-in 0.6s ease-out forwards'
+                    animationDelay: `${index * 200}ms`,
+                    animation: 'fade-in 0.6s ease-out forwards',
                   }}
                 >
                   {item.label}
@@ -59,14 +60,14 @@ const Navbar = () => {
           <div className="md:hidden">
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="text-gray-300 hover:text-white p-2 hover-glass rounded-md transition-all duration-200 hover:scale-110"
+              className="text-gray-300 hover:text-white p-2 rounded-md transition-all duration-200 hover:scale-110"
               aria-label="Toggle menu"
             >
               <div className="relative w-6 h-6">
                 <Menu 
                   size={24} 
                   className={`absolute transition-all duration-300 ${
-                    isOpen ? 'opacity-0 rotate-180' : 'opacity-100 rotate-0'
+                    isOpen ? 'opacity-0 rotate-90' : 'opacity-100 rotate-0'
                   }`} 
                 />
                 <X 
@@ -89,7 +90,7 @@ const Navbar = () => {
             <a
               key={item.label}
               href={item.href}
-              className={`text-gray-300 hover:text-white block px-3 py-2 text-base font-medium hover-glass rounded-md transition-all duration-200 ${
+              className={` text-gray-300 hover:text-white block px-3 py-2 text-base font-medium hover-glass rounded-md transition-all duration-200 ${
                 isOpen ? 'translate-x-0 opacity-100' : '-translate-x-4 opacity-0'
               }`}
               style={{ transitionDelay: `${index * 50}ms` }}
