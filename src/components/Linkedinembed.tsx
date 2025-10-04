@@ -5,15 +5,15 @@ const articles = [
     title: "How to Use GitHub as a Database for Your Web Projects",
     description:
       "Learn how to turn GitHub into a lightweight JSON database for your apps with versioning and free hosting.",
-    image: "/github-database-cover.png", // your uploaded cover photo
-    url: "https://www.linkedin.com/pulse/how-to-use-github-as-a-database-your-web-projects-7379928110726791168/",
+    image: "/github.png", // your uploaded cover photo
+    url: "https://www.linkedin.com/posts/salman-ahmad-1773aa221_hey-everyone-have-you-ever-struggled-activity-7307017982138806272-8IvX?utm_source=share&utm_medium=member_desktop&rcm=ACoAADfD4msBjpOcMgNPVZVRFNYVCftHmckQjCk",
   },
   {
-    title: "Another Article Title",
+    title: "How to Make vw Refer to a Container Instead of the Viewport Width",
     description:
-      "Short description of your second article to attract clicks.",
-    image: "/another-cover.png",
-    url: "https://www.linkedin.com/pulse/your-second-article-link",
+      "Hey everyone! 👋 Have you ever struggled with vw units behaving inconsistently in a max-width container?",
+    image: "/vw.png",
+    url: "https://www.linkedin.com/posts/salman-ahmad-1773aa221_how-to-use-github-as-a-database-for-your-activity-7379928111326330881-09PD?utm_source=share&utm_medium=member_desktop&rcm=ACoAADfD4msBjpOcMgNPVZVRFNYVCftHmckQjCk",
   },
 ];
 
@@ -35,14 +35,14 @@ const LinkedInArticles = () => {
                 alt={article.title}
                 className="w-full h-48 object-cover"
               />
-              <div className="p-5">
+              <div className="p-5 h-[18rem] flex flex-col items-start justify-between">
                 <h3 className="text-xl font-semibold mb-2">{article.title}</h3>
                 <p className="text-gray-600 mb-4">{article.description}</p>
                 <a
                   href={article.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-block px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors"
+                  className="inline-block px-4 py-2 bg-white border border-white text-black hover:text-white rounded-full hover:bg-transparent transition-colors"
                 >
                   Read on LinkedIn
                 </a>
