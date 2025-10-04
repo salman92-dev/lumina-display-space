@@ -5,14 +5,14 @@ const articles = [
     title: "How to Use GitHub as a Database for Your Web Projects",
     description:
       "Learn how to turn GitHub into a lightweight JSON database for your apps with versioning and free hosting.",
-    image: "/github.png", // your uploaded cover photo
+    image: "/github.webp", // your uploaded cover photo
     url: "https://www.linkedin.com/posts/salman-ahmad-1773aa221_hey-everyone-have-you-ever-struggled-activity-7307017982138806272-8IvX?utm_source=share&utm_medium=member_desktop&rcm=ACoAADfD4msBjpOcMgNPVZVRFNYVCftHmckQjCk",
   },
   {
     title: "How to Make vw Refer to a Container Instead of the Viewport Width",
     description:
       "Hey everyone! 👋 Have you ever struggled with vw units behaving inconsistently in a max-width container?",
-    image: "/vw.png",
+    image: "/vw.webp",
     url: "https://www.linkedin.com/posts/salman-ahmad-1773aa221_how-to-use-github-as-a-database-for-your-activity-7379928111326330881-09PD?utm_source=share&utm_medium=member_desktop&rcm=ACoAADfD4msBjpOcMgNPVZVRFNYVCftHmckQjCk",
   },
 ];
