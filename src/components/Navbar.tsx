@@ -1,8 +1,9 @@
 
 import { Menu, X } from "lucide-react";
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
+import ThemeToggle from "./ThemeToggle";
 import './logo.css';
-
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
@@ -40,19 +41,31 @@ const Navbar = () => {
           
           <div className="hidden md:block">
             <div className="ml-10 flex items-center space-x-8">
-              {menuItems.map((item, index) => (
-                <a
-                  key={item.label}
-                  href={item.href}
-                  className="text-gray-300 hover:text-white px-3 py-2 text-sm font-medium hover-glass rounded-md transition-all duration-200 hover:scale-105"
-                  style={{ 
-                    animationDelay: `${index * 100}ms`,
-                    animation: 'fade-in 0.6s ease-out forwards'
-                  }}
-                >
-                  {item.label}
-                </a>
-              ))}
+              {menuItems.map((item, index) => {
+                if (item.href === "/quote") {
+                  return (
+                    <Link
+                      key={item.label}
+                      to="/quote"
+                      className="text-gray-300 hover:text-white px-3 py-2 text-sm font-medium hover-glass rounded-md transition-all duration-200 hover:scale-105 animate-fade-in"
+                      style={{ animationDelay: `${index * 100}ms` }}
+                    >
+                      {item.label}
+                    </Link>
+                  );
+                }
+                return (
+                  <a
+                    key={item.label}
+                    href={item.href}
+                    className="text-gray-300 hover:text-white px-3 py-2 text-sm font-medium hover-glass rounded-md transition-all duration-200 hover:scale-105 animate-fade-in"
+                    style={{ animationDelay: `${index * 100}ms` }}
+                  >
+                    {item.label}
+                  </a>
+                );
+              })}
+              <ThemeToggle />
             </div>
           </div>
           
@@ -85,19 +98,37 @@ const Navbar = () => {
         isOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
       } overflow-hidden`}>
         <div className="px-2 pt-2 pb-3 space-y-1 glass">
-          {menuItems.map((item, index) => (
-            <a
-              key={item.label}
-              href={item.href}
-              className={`text-gray-300 hover:text-white block px-3 py-2 text-base font-medium hover-glass rounded-md transition-all duration-200 ${
-                isOpen ? 'translate-x-0 opacity-100' : '-translate-x-4 opacity-0'
-              }`}
-              style={{ transitionDelay: `${index * 50}ms` }}
-              onClick={() => setIsOpen(false)}
-            >
-              {item.label}
-            </a>
-          ))}
+          {menuItems.map((item, index) => {
+            const common = `text-gray-300 hover:text-white block px-3 py-2 text-base font-medium hover-glass rounded-md transition-all duration-200 ${isOpen ? 'translate-x-0 opacity-100' : '-translate-x-4 opacity-0'}`;
+            const delay = { transitionDelay: `${index * 50}ms` };
+            if (item.href === "/quote") {
+              return (
+                <Link
+                  key={item.label}
+                  to="/quote"
+                  className={common}
+                  style={delay}
+                  onClick={() => setIsOpen(false)}
+                >
+                  {item.label}
+                </Link>
+              );
+            }
+            return (
+              <a
+                key={item.label}
+                href={item.href}
+                className={common}
+                style={delay}
+                onClick={() => setIsOpen(false)}
+              >
+                {item.label}
+              </a>
+            );
+          })}
+          <div className="px-3 py-2">
+            <ThemeToggle />
+          </div>
         </div>
       </div>
     </nav>
