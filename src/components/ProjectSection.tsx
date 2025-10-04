@@ -19,6 +19,7 @@ const projects = [
     description: "Vertex Solution We help businesses thrive online with cutting-edge SEO, stunning web development, and strategic digital marketing that delivers real results.",
     image: "/vertex.jpg",
     link : "/project/vertex",
+    demoUrl : "https://vertex-solution.netlify.app/",
     technologies: ["React", "Vite", "Tailwind CSS","Supabase"],
   },
   {
@@ -26,6 +27,7 @@ const projects = [
     description: "$FLYING is a meme coin inspired by the satirical Flying Spaghetti Monster, aiming to revive original meme culture in crypto.",
     image: "/flying-speghetti.jpg",
     link : "/project/Flying Spaghetti",
+    demoUrl : "https://salman92-dev.github.io/flying-spaghetti/",
     technologies: ["React", "Node.js", "MongoDB"],
   },
   {
@@ -33,6 +35,7 @@ const projects = [
     description: "$SOAP is that feeling when you just hopped out the shower feeling squeaky clean and fresh. Your coins are pumping, your balls are clean, your bags are up.",
     image: "/soap-coin.jpg",
     link : "/project/soap-coin",
+    demoUrl : "https://salman92-dev.github.io/soap-coin-eth/",
     technologies: ["Html", "Css", "Javascript"],
   },
   {
@@ -40,6 +43,7 @@ const projects = [
     description: "Real-time analytics dashboard with data visualization",
     image: "/fsjal.jpg",
     link : "/project/fsjal",
+    demoUrl : "https://fsjal.netlify.app/",
     technologies: ["Html", "Css", "Javascript"],
   },
   {
@@ -47,6 +51,7 @@ const projects = [
     description: "A blockchain project using AI to enable secure, smart search/discovery for decentralized marketplaces.",
     image: "depin.jpg",
     link : "/project/depin",
+    demoUrl : "https://depin-coin.netlify.app/",
     technologies: ["Html", "Css","Javascript","React"],
   },
   {
@@ -54,6 +59,7 @@ const projects = [
     description: "Solonka emerges as the pinnacle of sophistication in the Solana Chain launchpad landscape, meticulously engineered for unrivaled user-friendliness and top-tier security.",
     image: "solonka.jpg",
     link : "/project/solonka",
+    demoUrl : "https://salman92-dev.github.io/solanka/",
     technologies: ["Html", "Css","Javascript"],
   },
   {
@@ -61,6 +67,7 @@ const projects = [
     description: "The one stop decentralized sports betting & online casino platform. Play your favorite games and win big.",
     image: "rapid-stakes.jpg",
     link : "/project/rapid-stakes",
+    demoUrl : "https://salman92-dev.github.io/rapid-stake/",
     technologies: ["Html", "Css","Javascript"],
   },
   {
@@ -68,6 +75,7 @@ const projects = [
     description: "The First Frictionless Forex Investing Protocol Built on Ethereum Merging Crypto & Forex",
     image: "fx-coin.jpg",
     link : "/project/fx-coin",
+    demoUrl : "https://salman92-dev.github.io/fx-coin/",
     technologies: ["Html", "Css","Javascript"],
   },
   {
@@ -75,6 +83,7 @@ const projects = [
     description: "DegenBook empowers users to cast their vote on fellow Telegram members which is not only fun and addictive, but it’s extremely valuable also.",
     image: "degen-book.jpg",
     link : "/project/degen-book",
+    demoUrl : "https://salman92-dev.github.io/degen-book/",
     technologies: ["Html", "Css","Javascript"],
   },
 ];
@@ -227,13 +236,13 @@ const ProjectSection = () => {
           <DialogHeader>
             <DialogTitle className="flex items-center justify-between">
               <span>{demoProject?.title} - Live Demo</span>
-              <Button
+              {/* <Button
                 variant="ghost"
                 size="icon"
                 onClick={() => setDemoProject(null)}
               >
                 <X className="w-4 h-4" />
-              </Button>
+              </Button> */}
             </DialogTitle>
             <DialogDescription>
               Interactive preview of the project
@@ -242,7 +251,7 @@ const ProjectSection = () => {
           {demoProject?.demoUrl && (
             <iframe
               src={demoProject.demoUrl}
-              className="w-full h-full rounded-lg border-2 border-border"
+              className="w-full h-[34rem] md:h-[31rem] rounded-lg border-2 border-border"
               title={`${demoProject.title} demo`}
             />
           )}
